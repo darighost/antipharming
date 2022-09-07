@@ -1,0 +1,27 @@
+{
+    "name": "Antipharming",
+    "description": "Detect pharming attempts by correlating DNS outcomes with an external nameserver.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "sheep16.png",
+        "48": "sheep48.png",
+        "128": "sheep128.png"
+      },
+    "content_scripts": [
+        {
+          "matches": ["*://*/*"],
+          "js": ["content-script.js"]
+        }
+      ],
+    "host_permissions": ["*://*/*"],
+    "permissions": [
+        "webRequest",
+        "tabs",
+        "storage",
+        "notifications"
+     ]
+  }
