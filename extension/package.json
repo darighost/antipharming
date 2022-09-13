@@ -1,0 +1,12 @@
+{
+  "name": "antipharming",
+  "version": "2.0.0",
+  "description": "An extension to prevent pharming attacks on Chrome",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -f extension.zip && zip -r builds/$(date +'%Y-%m-%d_%H:%M:%s').zip icons *json *js && echo 'build complete!' || echo 'build failed'"
+  },
+  "author": "",
+  "license": "ISC"
+}

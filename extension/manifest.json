@@ -7,9 +7,9 @@
         "service_worker": "background.js"
     },
     "icons": {
-        "16": "sheep16.png",
-        "48": "sheep48.png",
-        "128": "sheep128.png"
+        "16": "./icons/sheep16.png",
+        "48": "./icons/sheep48.png",
+        "128": "./icons/sheep128.png"
       },
     "content_scripts": [
         {
@@ -20,8 +20,6 @@
     "host_permissions": ["*://*/*"],
     "permissions": [
         "webRequest",
-        "tabs",
-        "storage",
-        "notifications"
+        "storage"
      ]
   }
