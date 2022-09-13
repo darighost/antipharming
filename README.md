@@ -2,6 +2,8 @@ Intro sentence
 
 quote explaining pharming (link to article from VM)
 
+Link to DL on Chrome Web Store
+
 ## How it works
 
 backend on PythonAnywhere
